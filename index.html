@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multiple Containers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeFontSize(action, blockId) {
+            const block = document.getElementById(blockId);
+            const columns = block.querySelectorAll('.column');
+            columns.forEach(column => {
+                let currentSize = window.getComputedStyle(column).fontSize;
+                currentSize = parseFloat(currentSize);
+
+                if (action === 'increase') {
+                    column.style.fontSize = (currentSize + 2) + 'px';
+                } else if (action === 'decrease') {
+                    column.style.fontSize = (currentSize - 2) + 'px';
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="block1" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block1')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block1')">A-</button>
+        </div>
+        <h1>॥ श्री गणपतीची आरती ॥</h1>
+        <div class="container">
+            <div class="column">सुखकर्ता दुःखहर्ता वार्ता विघ्नाची।</div>
+            <div class="column">नुरवी पुरवी प्रेम कृपा जयाची।</div>
+        </div>
+        <div class="container">
+            <div class="column">सर्वांगी सुन्दर उटि शेंदुराची।</div>
+            <div class="column">कण्ठी झळके माळ मुक्ताफळांची॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय मंगलमूर्ति।</div>
+            <div class="column">दर्शनमात्रे मनकामना पुरती॥</div>
+        </div>
+        <div class="container">
+            <div class="column"> रत्नखचित फरा तुज गौरीकुमरा।</div>
+            <div class="column"> चन्दनाची उटि कुंकुमकेशरा।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">हिरे जड़ित मुकुट शोभतो बरा।</div>
+            <div class="column"> रुणझुणती नूपुरे चरणी घागरिया॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय मंगलमूर्ति।</div>
+            <div class="column">दर्शनमात्रे मनकामना पुरती॥</div>
+        </div>
+        <div class="container">
+            <div class="column">लम्बोदर पीताम्बर फणिवर बन्धना।</div>
+            <div class="column">सरळ सोण्ड वक्रतुण्ड त्रिनयना।</div>
+        </div>
+        <div class="container">
+            <div class="column">दास रामाचा वाट पाहे सदना।</div>
+            <div class="column">संकटी पावावे निर्वाणी रक्षावे सुरवरवन्दना॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय मंगलमूर्ति।</div>
+            <div class="column">दर्शनमात्रे मनकामना पुरती॥</div>
+        </div>
+
+    </div>
+    <div id="block2" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block2')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block2')">A-</button>
+        </div>
+        <h1>गणेश आरती</h1>
+        <div class="container">
+            <div class="column">शेंदुर लाल चढ़ायो अच्छा गजमुखको।</div>
+            <div class="column">दोंदिल लाल बिराजे सुत गौरिहरको।</div>
+        </div>
+        <div class="container">
+            <div class="column">हाथ लिए गुडलद्दु सांई सुरवरको।</div>
+            <div class="column">महिमा कहे न जाय लागत हूं पादको ॥1॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय जय श्री गणराज विद्या सुखदाता।</div>
+            <div class="column">धन्य तुम्हारा दर्शन मेरा मन रमता ॥धृ॥</div>
+        </div>
+        <div class="container">
+            <div class="column">अष्टौ सिद्धि दासी संकटको बैरि।</div>
+            <div class="column">विघ्नविनाशन मंगल मूरत अधिकारी।</div>
+        </div>
+        <div class="container">
+            <div class="column">कोटीसूरजप्रकाश ऐबी छबि तेरी।</div>
+            <div class="column">गंडस्थलमदमस्तक झूले शशिबिहारि ॥2॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय जय श्री गणराज विद्या सुखदाता।</div>
+            <div class="column">धन्य तुम्हारा दर्शन मेरा मन रमता ॥धृ॥</div>
+        </div>
+        <div class="container">
+            <div class="column">भावभगत से कोई शरणागत आवे।</div>
+            <div class="column">संतत संपत सबही भरपूर पावे।</div>
+        </div>
+        <div class="container">
+            <div class="column">ऐसे तुम महाराज मोको अति भावे।</div>
+            <div class="column">गोसावीनंदन निशिदिन गुन गावे ॥3॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय जय श्री गणराज विद्या सुखदाता।</div>
+            <div class="column">धन्य तुम्हारा दर्शन मेरा मन रमता ॥धृ॥</div>
+        </div>
+    </div>
+    <div id="block3" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block3')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block3')">A-</button>
+        </div>
+        <h1>गणपतीची आरती</h1>
+        <div class="container">
+            <div class="column">नानापरिमळ दुर्वा शेंदूर शमिपत्रें ।</div>
+            <div class="column">लाडू मोद्क अन्ने परिपूरित पात्रें ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">ऎसे पूजन केल्या बीजाक्षरमंत्रे ।</div>
+            <div class="column">अष्टहि सिद्धी नवनिधी देसी क्षणमात्रें ।। १ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय मंगलमूर्ती ।</div>
+            <div class="column">तुझे गुण वर्णाया मज कैची स्फ़ूर्ती ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">तुझे ध्यान निरंतर जे कोणी करिती ।</div>
+            <div class="column">त्यांची सकलही पापे विघ्नेंही हरती ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">वाजी वारण शिबिका सेवक सुत युवती ।</div>
+            <div class="column">सर्वहि पावती अंती भवसागर तरती ।। २ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय मंगलमूर्ती ।</div>
+            <div class="column">तुझे गुण वर्णाया मज कैची स्फ़ूर्ती ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">शरणांगत सर्वस्वें भजती तव चरणी ।</div>
+            <div class="column">कीर्ती तयांची राहे जोवर शशितरणि ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">त्रैलोक्यी ते विजयी अदभूत हे करणी ।</div>
+            <div class="column">गोसावीनंदन रत नामस्मरणी ।। ३ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय मंगलमूर्ती ।</div>
+            <div class="column">तुझे गुण वर्णाया मज कैची स्फ़ूर्ती ।।</div>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="block4" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block4')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block4')">A-</button>
+        </div>
+        <h1>श्री शंकराची आरती</h1>
+        <div class="container">
+            <div class="column">लवथवती विक्राळा ब्रह्मांडी माळा,</div>
+            <div class="column">वीषे कंठ काळा त्रिनेत्री ज्वाळा</div>
+        </div>
+        <div class="container">
+            <div class="column">लावण्य सुंदर मस्तकी बाळा,</div>
+            <div class="column">तेथुनिया जळ निर्मळ वाहे झुळझुळा ॥ 1 ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय श्रीशंकरा,</div>
+            <div class="column">आरती ओवाळू तुज कर्पुरगौरा जय देव जय देव ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">कर्पुरगौरा भोळा नयनी विशाळा,</div>
+            <div class="column">अर्धांगी पार्वती सुमनांच्या माळा</div>
+        </div>
+        <div class="container">
+            <div class="column">विभुतीचे उधळण शितकंठ नीळा,</div>
+            <div class="column">ऐसा शंकर शोभे उमा वेल्हाळा ॥ २ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय श्रीशंकरा,</div>
+            <div class="column">आरती ओवाळू तुज कर्पुरगौरा जय देव जय देव ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">देवी दैत्यी सागरमंथन पै केले,</div>
+            <div class="column">त्यामाजी अवचित हळहळ जे उठले</div>
+        </div>
+        <div class="container">
+            <div class="column">ते त्वा असुरपणे प्राशन केले,</div>
+            <div class="column">नीलकंठ नाम प्रसिद्ध झाले ॥ ३ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय श्रीशंकरा,</div>
+            <div class="column">आरती ओवाळू तुज कर्पुरगौरा जय देव जय देव ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">व्याघ्रांबर फणिवरधर सुंदर मदनारी,</div>
+            <div class="column">पंचानन मनमोहन मुनिजनसुखकारी</div>
+        </div>
+        <div class="container">
+            <div class="column">शतकोटीचे बीज वाचे उच्चारी,</div>
+            <div class="column">रघुकुलटिळक रामदासा अंतरी ॥ ४ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय श्रीशंकरा,</div>
+            <div class="column">आरती ओवाळू तुज कर्पुरगौरा जय देव जय देव ॥</div>
+        </div>
+
+        <div class="content-block">
+            <h1>दुर्गा देवीची आरती</h1>
+            <div class="container">
+                <div class="column">दुर्गे दुर्घट भारी तुजविण संसारी ।</div>
+                <div class="column">अनाथनाथे अंबे करुणा विस्तारी ॥</div>
+            </div>
+            <div class="container">
+                <div class="column">वारी वारीं जन्ममरणाते वारी ।</div>
+                <div class="column">हारी पडलो आता संकट नीवारी ॥ १ ॥</div>
+            </div>
+            <div class="container container-green">
+                <div class="column">जय देवी जय देवी जय महिषासुरमथनी ।</div>
+                <div class="column">सुरवरईश्वरवरदे तारक संजीवनी ॥ धृ. ॥</div>
+            </div>
+
+            <div class="container">
+                <div class="column">त्रिभुवनी भुवनी पाहतां तुज ऎसे नाही ।</div>
+                <div class="column">चारी श्रमले परंतु न बोलावे काहीं ॥</div>
+            </div>
+            <div class="container">
+                <div class="column">साही विवाद करितां पडिले प्रवाही ।</div>
+                <div class="column">ते तूं भक्तालागी पावसि लवलाही ॥ २ ॥</div>
+            </div>
+            <div class="container container-green">
+                <div class="column">जय देवी जय देवी जय महिषासुरमथनी ।</div>
+                <div class="column">सुरवरईश्वरवरदे तारक संजीवनी ॥</div>
+            </div>
+
+            <div class="container">
+                <div class="column">प्रसन्न वदने प्रसन्न होसी निजदासां ।</div>
+                <div class="column">क्लेशापासूनि सोडी तोडी भवपाशा ॥</div>
+            </div>
+            <div class="container">
+                <div class="column">अंबे तुजवांचून कोण पुरविल आशा ।</div>
+                <div class="column">नरहरि तल्लिन झाला पदपंकजलेशा ॥ ३ ॥</div>
+            </div>
+            <div class="container container-green">
+                <div class="column">जय देवी जय देवी जय महिषासुरमथनी ।</div>
+                <div class="column">सुरवरईश्वरवरदे तारक संजीवनी ॥</div>
+            </div>
+        </div>
+    </div>
+    <div id="block5" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block5')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block5')">A-</button>
+        </div>
+        <h1>श्री महालक्ष्मीची आरती</h1>
+        <div class="container">
+            <div class="column">करवीरपुरवासिनी सुरवरमुनिमाता ।</div>
+            <div class="column">पुरहरवरदायिनी मुरहरप्रियकान्ता ।</div>
+        </div>
+        <div class="container">
+            <div class="column">कमलाकारें जठरी जन्मविला धाता ।</div>
+            <div class="column">सहस्त्रवदनी भूधर न पुरे गुण गातां ॥ 1 ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देवी जय देवी जय महालक्ष्मी ।</div>
+            <div class="column">वससी व्यापकरुपे तू स्थूलसूक्ष्मी ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">मातुलिंग गदा खेटक रविकिरणीं ।</div>
+            <div class="column">झळके हाटकवाटी पीयुषरसपाणी ।</div>
+        </div>
+        <div class="container">
+            <div class="column">माणिकरसना सुरंगवसना मृगनयनी ।</div>
+            <div class="column">शशिकरवदना राजस मदनाची जननी ॥ 2 ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देवी जय देवी जय महालक्ष्मी ।</div>
+            <div class="column">वससी व्यापकरुपे तू स्थूलसूक्ष्मी ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">तारा शक्ति अगम्या शिवभजकां गौरी ।</div>
+            <div class="column">सांख्य म्हणती प्रकृती निर्गुण निर्धारी ।</div>
+        </div>
+        <div class="container">
+            <div class="column">गायत्री निजबीजा निगमागम सारी ।</div>
+            <div class="column">प्रगटे पद्मावती निजधर्माचारी ॥ 3 ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देवी जय देवी जय महालक्ष्मी ।</div>
+            <div class="column">वससी व्यापकरुपे तू स्थूलसूक्ष्मी ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">अमृतभरिते सरिते अघदुरितें वारीं ।</div>
+            <div class="column">मारी दुर्घट असुरां भवदुस्तर तारीं ।</div>
+        </div>
+        <div class="container">
+            <div class="column">वारी मायापटल प्रणमत परिवारी ।</div>
+            <div class="column">हें रुप चिद्रूप दावी निर्धारी ॥ 4 ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देवी जय देवी जय महालक्ष्मी ।</div>
+            <div class="column">वससी व्यापकरुपे तू स्थूलसूक्ष्मी ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">चतुराननें कुश्चित कर्मांच्या ओळी ।</div>
+            <div class="column">लिहिल्या असतिल माते माझे निजभाळी ।</div>
+        </div>
+        <div class="container">
+            <div class="column">पुसोनि चरणातळी पदसुमने क्षाळी ।</div>
+            <div class="column">मुक्तेश्वर नागर क्षीरसागरबाळी ॥ 5॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देवी जय देवी जय महालक्ष्मी ।</div>
+            <div class="column">वससी व्यापकरुपे तू स्थूलसूक्ष्मी ॥</div>
+        </div>
+
+
+    </div>
+    <div id="block6" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block6')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block6')">A-</button>
+        </div>
+        <h1>पांडुरंगाची आरती</h1>
+        <div class="container container-green">
+            <div class="column">येई हो विठ्ठले माझे माउली ये... माझे माउली ये ।</div>
+            <div class="column">निढळावरी कर… निढळावरी कर ठेवुनी वाट मी पाहें ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">आलिया गेलिया हातीं धाडी निरोप...हातीं धाडी निरोप ।</div>
+            <div class="column">पंढरपुरी आहे...पंढरपुरी आहे माझा मायबाप ।।</div>
+        </div>
+
+        <div class="container container-green">
+            <div class="column">येई हो विठ्ठले माझे माउली ये... माझे माउली ये ।</div>
+            <div class="column">निढळावरी कर… निढळावरी कर ठेवुनी वाट मी पाहें ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">पिवळा पितांबर कैसा गगनी झळकला...कैसा गगनी झळकला ।</div>
+            <div class="column">गरुडावरी बैसोनि...गरुडावरी बैसोनि माझा कैवारी आला ।।</div>
+        </div>
+
+        <div class="container container-green">
+            <div class="column">येई हो विठ्ठले माझे माउली ये... माझे माउली ये ।</div>
+            <div class="column">निढळावरी कर… निढळावरी कर ठेवुनी वाट मी पाहें ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">विठोबाचें राज्य आम्हा नित्य दिपवाळी... आम्हा नित्य दिपवाळी ।</div>
+            <div class="column">विष्णुदास नामा... विष्णुदास नामा जीवे भावें ओवाळी ।।</div>
+        </div>
+
+        <div class="container container-green">
+            <div class="column">येई हो विठ्ठले माझे माउली ये... माझे माउली ये ।</div>
+            <div class="column">निढळावरी कर… निढळावरी कर ठेवुनी वाट मी पाहें ।।</div>
+        </div>
+    </div>
+    <div id="block7" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block7')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block7')">A-</button>
+        </div>
+        <h1>श्री विठ्ठलाची आरती</h1>
+        <div class="container">
+            <div class="column">युगें अठ्ठावीस विटेवरी उभा ।</div>
+            <div class="column">वामांगी रखुमाई दिसे दिव्य शोभा ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">पुंडलिकाचे भेटी परब्रह्म आलें गा ।</div>
+            <div class="column">चरणी वाहे भीमा उद्धरी जगा ।। १ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय पांडुरंगा ।</div>
+            <div class="column">रखुमाईवल्लभा राईच्या वल्लभा पावें जिवलगा ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">तुळसीमाळा गळां कर ठेवुनि कटीं ।</div>
+            <div class="column">कांसे पीताम्बर कस्तुरि लल्लाटी ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">देव सुरवर नित्य येती भेटी ।</div>
+            <div class="column">गरुड हनुमन्त पुढे उभे राहती ।। २ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय पांडुरंगा ।</div>
+            <div class="column">रखुमाईवल्लभा राईच्या वल्लभा पावें जिवलगा ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">धन्य वेणुनाद अनुक्षेत्रपाळा ।</div>
+            <div class="column">सुवर्णाची कमळे वनमाळा गळां ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">राही रखुमाबाई राणीया सकळा ।</div>
+            <div class="column">ओवाळिती राजा विठोबा सांवळा ।। ३ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय पांडुरंगा ।</div>
+            <div class="column">रखुमाईवल्लभा राईच्या वल्लभा पावें जिवलगा ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">ओवाळूं आरत्या कुर्वण्ड्या येती ।</div>
+            <div class="column">चन्द्रभागेमाजी सोडुनियां देती ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">दिंड्या पताका वैष्णव नाचती ।</div>
+            <div class="column">पंढरीचा महिमा वर्णावा किती ।। ४ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय पांडुरंगा ।</div>
+            <div class="column">रखुमाईवल्लभा राईच्या वल्लभा पावें जिवलगा ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">आषाढी कार्तिकी भक्तजन येती ।</div>
+            <div class="column">चन्द्रभागेमाजी स्नाने जे करिती ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">दर्शनहेळामात्रें तयां होय मुक्ती ।</div>
+            <div class="column">केशवासी नामदेव भावे ओंवाळिती ।। ५ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव जय पांडुरंगा ।</div>
+            <div class="column">रखुमाईवल्लभा राईच्या वल्लभा पावें जिवलगा ।।</div>
+        </div>
+    </div>
+    <div id="block8" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block8')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block8')">A-</button>
+        </div>
+        <h1>श्री गुरुदत्ताची आरती</h1>
+        <div class="container">
+            <div class="column">त्रिगुणात्मक त्रैमूर्ती दत्त हा जाणा ।</div>
+            <div class="column">त्रिगुणी अवतार त्रेलोक्य राणा ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">नेती नेती शब्द न ये अनुमाना ।</div>
+            <div class="column">सुरवर मुनिजन योगी समाधी न ये ध्याना ।। १ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जयदेव जय श्री गुरुदत्ता ।</div>
+            <div class="column">आरती ओवाळिता हरली भवचिंता । जय देव जय देव ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">सबाह्य अभ्यंतरीं तू एक दत्त ।</div>
+            <div class="column">अभाग्यासी कैंची कळेल ही मात ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">परा ही परतली तेथे कैंचा हा हेत ।</div>
+            <div class="column">जन्मरमरण्याचा पुरलासे अंत ।। २ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जयदेव जय श्री गुरुदत्ता ।</div>
+            <div class="column">आरती ओवाळिता हरली भवचिंता । जय देव जय देव ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">दत्त येऊनिया उभा ठाकला ।</div>
+            <div class="column">सद्भावे साष्टांग प्रणिपात केला ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">प्रसन्न होऊनिया आशीर्वाद दिधला ।</div>
+            <div class="column">जन्ममरण्याचा फेरा चुकविला ।। ३ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जयदेव जय श्री गुरुदत्ता ।</div>
+            <div class="column">आरती ओवाळिता हरली भवचिंता । जय देव जय देव ।।</div>
+        </div>
+
+        <div class="container">
+            <div class="column">दत्त दत्त ऐसे लागले ध्यान ।</div>
+            <div class="column">हारपले मन झाले उन्मन ।।</div>
+        </div>
+        <div class="container">
+            <div class="column">मीतूंपणाची झाली बोळवण ।</div>
+            <div class="column">एका जनार्दनीं श्री दत्त ध्यान ।। ४ ।।</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जयदेव जय श्री गुरुदत्ता ।</div>
+            <div class="column">आरती ओवाळिता हरली भवचिंता । जय देव जय देव ।।</div>
+        </div>
+
+    </div>
+    <div id="block9" class="content-block">
+        <div class="controls">
+            <button onclick="changeFontSize('increase', 'block9')">A+</button>
+            <button onclick="changeFontSize('decrease', 'block9')">A-</button>
+        </div>
+        <h1>श्री रामाची आरती</h1>
+        <div class="container">
+            <div class="column">उत्कट साधुनि शिळा सेतू बांधोनी ।</div>
+            <div class="column">लिंगदेह-लंकापुरि विध्वंसूनी ॥</div>
+        </div>
+        <div class="container">
+            <div class="column">कामक्रोधादिक राक्षस मर्दूनी ।</div>
+            <div class="column">देह-अहंभाव रावण निवटोनी ॥ १ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव निजबोधा रामा ।</div>
+            <div class="column">परमार्थे आरती सद्भावें आरती परिपूर्णकामा ॥ ध्रु ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">प्रथम सीताशोधा हनुमंत गेला ।</div>
+            <div class="column">लंका दहन करुनी अखया मारिला ॥</div>
+        </div>
+        <div class="container">
+            <div class="column">मारिला जंबूमाळी बुवनीं त्राहाटीला ।</div>
+            <div class="column">आनंदाची गुढी घेउनियां अला ॥ २ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव निजबोधा रामा ।</div>
+            <div class="column">परमार्थे आरती सद्भावें आरती परिपूर्णकामा ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">निजबळें निजशक्ति सोडविली सीता ।</div>
+            <div class="column">म्हणुनी येणें झालें आयोध्यें रघुनाथा ॥</div>
+        </div>
+        <div class="container">
+            <div class="column">आनंदें वोसंडे वैराग्य भरता ।</div>
+            <div class="column">आरति घेउनि आली कौसल्या माता ॥ ३ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव निजबोधा रामा ।</div>
+            <div class="column">परमार्थे आरती सद्भावें आरती परिपूर्णकामा ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">अनाहत ध्वनि गर्जति अपार ।</div>
+            <div class="column">अठरा पद्मे वानर करिती भुभुःकार ॥</div>
+        </div>
+        <div class="container">
+            <div class="column">अयोध्येसी आले दशरथकुमार ।</div>
+            <div class="column">नगरीं होत आहे आनंद थोर ॥ ४ ॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव निजबोधा रामा ।</div>
+            <div class="column">परमार्थे आरती सद्भावें आरती परिपूर्णकामा ॥</div>
+        </div>
+
+        <div class="container">
+            <div class="column">सहज सिंहासनीं राजा रघुवीर ।</div>
+            <div class="column">सोSहंभावें तया पूजा उपचार ।</div>
+        </div>
+        <div class="container">
+            <div class="column">सहजांची आरती वाद्यांचा गजर ।</div>
+            <div class="column">माधवदासा स्वामी आठव ना विसर ॥५॥</div>
+        </div>
+        <div class="container container-green">
+            <div class="column">जय देव जय देव निजबोधा रामा ।</div>
+            <div class="column">परमार्थे आरती सद्भावें आरती परिपूर्णकामा ॥</div>
+        </div>
+    </div>
+</body>
+<!-- https://brahmabhakti.com/category/aarti-sangrah/ -->
+
+</html>
