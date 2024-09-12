@@ -31,6 +31,15 @@ body {
             /* margin: 20px 0; */
             margin-left: 20px;
             margin-right: 20px;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            /* Smooth transition for collapsing/expanding */
+            overflow: hidden;
+            max-height: 500px;
+            /* Ensure this is larger than the content's height */
+        }
+        .container.collapsed {
+            max-height: 0;
+            opacity: 0;
         }
         .container-green {
             color: green;
@@ -67,7 +76,10 @@ body {
             border: none;
             cursor: pointer;
         }
-
+        h1 {
+            cursor: pointer;
+            /* Indicate that heading is clickable */
+        }
         @media (max-width: 600px) {
             .container {
                 flex-direction: column;

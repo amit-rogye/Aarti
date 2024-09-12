@@ -20,6 +20,20 @@
                 }
             });
         }
+
+        function toggleContainer(event) {
+            const heading = event.target;
+            const contentBlock = heading.closest('.content-block');
+            const containers = contentBlock.querySelectorAll('.container');
+
+            containers.forEach(container => {
+                if (container.classList.contains('collapsed')) {
+                    container.classList.remove('collapsed');
+                } else {
+                    container.classList.add('collapsed');
+                }
+            });
+        }
     </script>
 </head>
 
@@ -30,7 +44,7 @@
     </div>
     <div id="block1" class="content-block">
 
-        <h1>॥ श्री गणपतीची आरती ॥</h1>
+        <h1 onclick="toggleContainer(event)">॥ श्री गणपतीची आरती ॥</h1>
         <div class="container">
             <div class="column">सुखकर्ता दुःखहर्ता वार्ता विघ्नाची।</div>
             <div class="column">नुरवी पुरवी प्रेम कृपा जयाची।</div>
@@ -72,7 +86,7 @@
     </div>
     <div id="block2" class="content-block">
 
-        <h1>गणेश आरती</h1>
+        <h1 onclick="toggleContainer(event)">गणेश आरती</h1>
         <div class="container">
             <div class="column">शेंदुर लाल चढ़ायो अच्छा गजमुखको।</div>
             <div class="column">दोंदिल लाल बिराजे सुत गौरिहरको।</div>
@@ -112,7 +126,7 @@
     </div>
     <div id="block3" class="content-block">
 
-        <h1>गणपतीची आरती</h1>
+        <h1 onclick="toggleContainer(event)">गणपतीची आरती</h1>
         <div class="container">
             <div class="column">नानापरिमळ दुर्वा शेंदूर शमिपत्रें ।</div>
             <div class="column">लाडू मोद्क अन्ने परिपूरित पात्रें ।।</div>
@@ -158,7 +172,7 @@
     </div>
     <div id="block4" class="content-block">
 
-        <h1>श्री शंकराची आरती</h1>
+        <h1 onclick="toggleContainer(event)">श्री शंकराची आरती</h1>
         <div class="container">
             <div class="column">लवथवती विक्राळा ब्रह्मांडी माळा,</div>
             <div class="column">वीषे कंठ काळा त्रिनेत्री ज्वाळा</div>
@@ -212,7 +226,7 @@
         </div>
 
         <div class="content-block">
-            <h1>दुर्गा देवीची आरती</h1>
+            <h1 onclick="toggleContainer(event)">दुर्गा देवीची आरती</h1>
             <div class="container">
                 <div class="column">दुर्गे दुर्घट भारी तुजविण संसारी ।</div>
                 <div class="column">अनाथनाथे अंबे करुणा विस्तारी ॥</div>
@@ -255,7 +269,7 @@
     </div>
     <div id="block5" class="content-block">
 
-        <h1>श्री महालक्ष्मीची आरती</h1>
+        <h1 onclick="toggleContainer(event)">श्री महालक्ष्मीची आरती</h1>
         <div class="container">
             <div class="column">करवीरपुरवासिनी सुरवरमुनिमाता ।</div>
             <div class="column">पुरहरवरदायिनी मुरहरप्रियकान्ता ।</div>
@@ -325,7 +339,7 @@
     </div>
     <div id="block6" class="content-block">
 
-        <h1>पांडुरंगाची आरती</h1>
+        <h1 onclick="toggleContainer(event)">पांडुरंगाची आरती</h1>
         <div class="container container-green">
             <div class="column">येई हो विठ्ठले माझे माउली ये... माझे माउली ये ।</div>
             <div class="column">निढळावरी कर… निढळावरी कर ठेवुनी वाट मी पाहें ।।</div>
@@ -360,7 +374,7 @@
     </div>
     <div id="block7" class="content-block">
 
-        <h1>श्री विठ्ठलाची आरती</h1>
+        <h1 onclick="toggleContainer(event)">श्री विठ्ठलाची आरती</h1>
         <div class="container">
             <div class="column">युगें अठ्ठावीस विटेवरी उभा ।</div>
             <div class="column">वामांगी रखुमाई दिसे दिव्य शोभा ।।</div>
@@ -428,7 +442,7 @@
     </div>
     <div id="block8" class="content-block">
 
-        <h1>श्री गुरुदत्ताची आरती</h1>
+        <h1 onclick="toggleContainer(event)">श्री गुरुदत्ताची आरती</h1>
         <div class="container">
             <div class="column">त्रिगुणात्मक त्रैमूर्ती दत्त हा जाणा ।</div>
             <div class="column">त्रिगुणी अवतार त्रेलोक्य राणा ।।</div>
@@ -484,7 +498,7 @@
     </div>
     <div id="block9" class="content-block">
 
-        <h1>श्री रामाची आरती</h1>
+        <h1 onclick="toggleContainer(event)">श्री रामाची आरती</h1>
         <div class="container">
             <div class="column">उत्कट साधुनि शिळा सेतू बांधोनी ।</div>
             <div class="column">लिंगदेह-लंकापुरि विध्वंसूनी ॥</div>
