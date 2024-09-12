@@ -7,9 +7,8 @@
     <title>Responsive Multiple Containers</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        function changeFontSize(action, blockId) {
-            const block = document.getElementById(blockId);
-            const columns = block.querySelectorAll('.column');
+        function changeFontSize(action) {
+            const columns = document.querySelectorAll('.column');
             columns.forEach(column => {
                 let currentSize = window.getComputedStyle(column).fontSize;
                 currentSize = parseFloat(currentSize);
@@ -25,12 +24,12 @@
 </head>
 
 <body>
-
+    <div class="controls">
+        <button onclick="changeFontSize('increase')">A+</button>
+        <button onclick="changeFontSize('decrease')">A-</button>
+    </div>
     <div id="block1" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block1')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block1')">A-</button>
-        </div>
+
         <h1>॥ श्री गणपतीची आरती ॥</h1>
         <div class="container">
             <div class="column">सुखकर्ता दुःखहर्ता वार्ता विघ्नाची।</div>
@@ -72,10 +71,7 @@
 
     </div>
     <div id="block2" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block2')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block2')">A-</button>
-        </div>
+
         <h1>गणेश आरती</h1>
         <div class="container">
             <div class="column">शेंदुर लाल चढ़ायो अच्छा गजमुखको।</div>
@@ -115,10 +111,7 @@
         </div>
     </div>
     <div id="block3" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block3')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block3')">A-</button>
-        </div>
+
         <h1>गणपतीची आरती</h1>
         <div class="container">
             <div class="column">नानापरिमळ दुर्वा शेंदूर शमिपत्रें ।</div>
@@ -164,10 +157,7 @@
 
     </div>
     <div id="block4" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block4')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block4')">A-</button>
-        </div>
+
         <h1>श्री शंकराची आरती</h1>
         <div class="container">
             <div class="column">लवथवती विक्राळा ब्रह्मांडी माळा,</div>
@@ -264,10 +254,7 @@
         </div>
     </div>
     <div id="block5" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block5')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block5')">A-</button>
-        </div>
+
         <h1>श्री महालक्ष्मीची आरती</h1>
         <div class="container">
             <div class="column">करवीरपुरवासिनी सुरवरमुनिमाता ।</div>
@@ -337,10 +324,7 @@
 
     </div>
     <div id="block6" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block6')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block6')">A-</button>
-        </div>
+
         <h1>पांडुरंगाची आरती</h1>
         <div class="container container-green">
             <div class="column">येई हो विठ्ठले माझे माउली ये... माझे माउली ये ।</div>
@@ -375,10 +359,7 @@
         </div>
     </div>
     <div id="block7" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block7')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block7')">A-</button>
-        </div>
+
         <h1>श्री विठ्ठलाची आरती</h1>
         <div class="container">
             <div class="column">युगें अठ्ठावीस विटेवरी उभा ।</div>
@@ -446,10 +427,7 @@
         </div>
     </div>
     <div id="block8" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block8')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block8')">A-</button>
-        </div>
+
         <h1>श्री गुरुदत्ताची आरती</h1>
         <div class="container">
             <div class="column">त्रिगुणात्मक त्रैमूर्ती दत्त हा जाणा ।</div>
@@ -505,10 +483,7 @@
 
     </div>
     <div id="block9" class="content-block">
-        <div class="controls">
-            <button onclick="changeFontSize('increase', 'block9')">A+</button>
-            <button onclick="changeFontSize('decrease', 'block9')">A-</button>
-        </div>
+
         <h1>श्री रामाची आरती</h1>
         <div class="container">
             <div class="column">उत्कट साधुनि शिळा सेतू बांधोनी ।</div>
